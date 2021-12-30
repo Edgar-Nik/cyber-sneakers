@@ -1,0 +1,132 @@
+header {
+  background: #0d0d0d;
+  width: 100%;
+  border-bottom: 1px solid #707070;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+}
+header > .container {
+  width: 100%;
+  padding: 31px 67px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1920px;
+  margin: 0 auto;
+}
+header .menu-btn {
+  display: none;
+  cursor: pointer;
+}
+.menu-btn .bar1,
+.menu-btn .bar2,
+.menu-btn .bar3 {
+  width: 35px;
+  height: 5px;
+  background-color: rgb(197, 197, 197);
+  margin: 6px 0;
+  transition: 0.4s;
+}
+header .logo-wrapper {
+  display: flex;
+  align-items: center;
+}
+header .logo-wrapper .logo {
+  width: 51px;
+}
+header .logo-wrapper .logo-text {
+  width: 391px;
+  margin-left: 22px;
+}
+
+.header-nav {
+  width: 50%;
+  justify-content: space-between;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  margin-left: 100px;
+}
+.header-nav li a {
+  color: #f0f0f0;
+  text-decoration: none;
+  font-size: 20px;
+}
+.header-nav li a:hover {
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 1200px) {
+  header .logo-wrapper .logo {
+    width: 42px;
+  }
+  header .logo-wrapper .logo-text {
+    width: 280px;
+  }
+  .header-nav li a {
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 980px) {
+  header .menu-btn {
+    display: inline-block;
+  }
+  header .menu-active .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-8px, 6px);
+    transform: rotate(-45deg) translate(-8px, 6px);
+  }
+
+  header .menu-active .bar2 {
+    opacity: 0;
+  }
+  header .menu-active .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -8px);
+  }
+
+  header .header-nav {
+    position: fixed;
+    right: 0;
+    top: 100px;
+    transform: translate(200%, 0);
+    transition: 0.5s;
+    height: 100%;
+    background: #0d0d0d;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-left: 0;
+    align-items: flex-start;
+  }
+  header .header-nav li {
+    margin: 12px 20px 18px;
+  }
+  header .header-nav li a {
+    color: #f0f0f0;
+    font-size: 24px;
+  }
+  header .header-nav-active {
+    transform: translate(0, 0);
+  }
+}
+@media screen and (max-width: 980px) {
+  header .container {
+    padding: 31px 24px;
+  }
+  header .logo-wrapper .logo {
+    width: 32px;
+  }
+  header .logo-wrapper .logo-text {
+    width: 180px;
+    margin-left: 12px;
+  }
+}
+@media screen and (max-width: 330px) {
+  header .logo-wrapper .logo-text {
+    display: none;
+  }
+  header .header-nav {
+    width: 80%;
+  }
+}
