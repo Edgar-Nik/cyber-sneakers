@@ -29,36 +29,11 @@ export default function Carousel({ sneakersData }) {
   return (
     <div className="carousel">
       <Slider {...settings}>
-        <CardItem
-          imgSrc={sneackersImg1}
-          desc={
-            "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam "
-          }
-        />
-        <CardItem
-          imgSrc={sneackersImg2}
-          desc={
-            "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam "
-          }
-        />
-        <CardItem
-          imgSrc={sneackersImg3}
-          desc={
-            "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam "
-          }
-        />
-        <CardItem
-          imgSrc={sneackersImg4}
-          desc={
-            "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam "
-          }
-        />
-        <CardItem
-          imgSrc={sneackersImg5}
-          desc={
-            "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam "
-          }
-        />
+        <CardItem imgSrc={sneackersImg1} />
+        <CardItem imgSrc={sneackersImg2} />
+        <CardItem imgSrc={sneackersImg3} />
+        <CardItem imgSrc={sneackersImg4} />
+        <CardItem imgSrc={sneackersImg5} />
       </Slider>
     </div>
   );

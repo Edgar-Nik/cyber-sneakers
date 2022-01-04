@@ -8,7 +8,11 @@ import TeamCard from "./components/TeamCard";
 
 import faqData from "./services/faq";
 
-import testImg from "./assets/imgs/team/test-image-2.jpg";
+import team1 from "./assets/imgs/team/photo_2022-01-04_21-35-16.jpg";
+import team2 from "./assets/imgs/team/photo_2022-01-04_21-35-29.jpg";
+import team3 from "./assets/imgs/team/photo_2022-01-04_21-35-22.jpg";
+import team4 from "./assets/imgs/team/photo_2022-01-04_21-35-24.jpg";
+
 import FaqItem from "./components/FaqItem";
 
 import discordIco from "./assets/imgs/logo/discord.svg";
@@ -83,7 +87,7 @@ const App = () => {
           <div className="team">
             <TeamCard
               fullName="pierre"
-              image={testImg}
+              image={team1}
               links={{
                 twitter: "https://twitter.com/PBarrafranca",
                 insta: "https://instagram.com/pbarrafranca",
@@ -91,7 +95,7 @@ const App = () => {
             />
             <TeamCard
               fullName="idriss"
-              image={testImg}
+              image={team2}
               links={{
                 twitter: "https://twitter.com/idrissbcom",
                 insta: "https://instagram.com/idrissbcom",
@@ -100,7 +104,7 @@ const App = () => {
             />
             <TeamCard
               fullName="yannick"
-              image={testImg}
+              image={team3}
               links={{
                 twitter: "https://twitter.com/kamga_y",
                 insta: "https://instagram.com/yannsw75",
@@ -108,7 +112,7 @@ const App = () => {
             />
             <TeamCard
               fullName="sapir"
-              image={testImg}
+              image={team4}
               links={{ twitter: "http://www.twitter.com/CryptoQueenIL" }}
             />
           </div>

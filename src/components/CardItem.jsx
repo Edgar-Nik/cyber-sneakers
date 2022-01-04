@@ -6,9 +6,9 @@ export default function CardItem({ imgSrc, desc }) {
       <div className="top">
         <img src={imgSrc} alt="sneakers" />
       </div>
-      <div className="bottom">
+      {/* <div className="bottom">
         <p className="desc">{desc}</p>
-      </div>
+      </div> */}
     </div>
   );
 }
