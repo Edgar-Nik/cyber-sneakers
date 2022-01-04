@@ -14,7 +14,7 @@ import FaqItem from "./components/FaqItem";
 import discordIco from "./assets/imgs/logo/discord.svg";
 import instaIco from "./assets/imgs/logo/instagram.svg";
 import twitterIco from "./assets/imgs/logo/twitter.svg";
-import openseaIco from "./assets/imgs/logo/opensea.svg";
+import linktreeIco from "./assets/imgs/logo/linktree.svg";
 import blankImage from "./assets/imgs/blank-image.png";
 
 import "./assets/css/header.css";
@@ -22,7 +22,7 @@ import "./assets/css/index.css";
 
 const App = () => {
   const joinNow = () => {
-    window.open("/", "_blank");
+    window.open("https://discord.com/invite/CyberSneakers", "_blank");
   };
 
   return (
@@ -129,16 +129,25 @@ const App = () => {
         <section className="comunity">
           <h1 className="title">JOIN THE COMUNITY</h1>
           <div className="comunity-link-wrapper">
-            <a href="/" className="comunity-link">
+            <a
+              href="https://www.instagram.com/cybersneakersnft/"
+              className="comunity-link"
+            >
               <img src={instaIco} alt="" />
             </a>
-            <a href="/" className="comunity-link">
+            <a
+              href="https://twitter.com/cyber_sneakers"
+              className="comunity-link"
+            >
               <img src={twitterIco} alt="" />
             </a>
-            <a href="/" className="comunity-link">
-              <img src={openseaIco} alt="" />
+            <a href="https://linktr.ee/cybersneakers" className="comunity-link">
+              <img src={linktreeIco} alt="" />
             </a>
-            <a href="/" className="comunity-link">
+            <a
+              href="https://discord.com/invite/CyberSneakers"
+              className="comunity-link"
+            >
               <img src={discordIco} alt="" />
             </a>
           </div>
