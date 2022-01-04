@@ -12,6 +12,8 @@ import team1 from "./assets/imgs/team/photo_2022-01-04_21-35-16.jpg";
 import team2 from "./assets/imgs/team/photo_2022-01-04_21-35-29.jpg";
 import team3 from "./assets/imgs/team/photo_2022-01-04_21-35-22.jpg";
 import team4 from "./assets/imgs/team/photo_2022-01-04_21-35-24.jpg";
+import goldenSneakersImg from "./assets/imgs/golden-sneakers.png";
+import silverSneakersImg from "./assets/imgs/silver.png";
 
 import FaqItem from "./components/FaqItem";
 
@@ -78,6 +80,59 @@ const App = () => {
               </div>
             </div>
           </div>
+
+          <div id="features" className="features">
+            <div className="left">
+              <img src={goldenSneakersImg} alt="golden_sneakers" />
+            </div>
+            <div className="right">
+              <div className="top featues-row">
+                <div className="sneakers-item">
+                  <img src={silverSneakersImg} alt="" />
+                  <p className="desc">Lorem Ipsum</p>
+                </div>
+                <div className="sneakers-item">
+                  <img src={silverSneakersImg} alt="" />
+                  <p className="desc">Lorem Ipsum</p>
+                </div>
+                <div className="sneakers-item">
+                  <img src={silverSneakersImg} alt="" />
+                  <p className="desc">Lorem Ipsum</p>
+                </div>
+                <div className="sneakers-item">
+                  <img src={silverSneakersImg} alt="" />
+                  <p className="desc">Lorem Ipsum</p>
+                </div>
+                <div className="sneakers-item">
+                  <img src={silverSneakersImg} alt="" />
+                  <p className="desc">Lorem Ipsum</p>
+                </div>
+              </div>
+              <div className="bottom featues-row">
+                <div className="sneakers-item">
+                  <img src={silverSneakersImg} alt="" />
+                  <p className="desc">Lorem Ipsum</p>
+                </div>
+                <div className="sneakers-item">
+                  <img src={silverSneakersImg} alt="" />
+                  <p className="desc">Lorem Ipsum</p>
+                </div>
+                <div className="sneakers-item">
+                  <img src={silverSneakersImg} alt="" />
+                  <p className="desc">Lorem Ipsum</p>
+                </div>
+                <div className="sneakers-item">
+                  <img src={silverSneakersImg} alt="" />
+                  <p className="desc">Lorem Ipsum</p>
+                </div>
+                <div className="sneakers-item">
+                  <img src={silverSneakersImg} alt="" />
+                  <p className="desc">Lorem Ipsum</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
           <Carousel />
           <CountDown label="MINT COUNTDOWN" countDownFrom="2022-01-10" />
         </section>
@@ -135,6 +190,8 @@ const App = () => {
           <div className="comunity-link-wrapper">
             <a
               href="https://www.instagram.com/cybersneakersnft/"
+              target="_blank"
+              rel="noreferrer"
               className="comunity-link"
             >
               <img src={instaIco} alt="" />
@@ -142,14 +199,23 @@ const App = () => {
             <a
               href="https://twitter.com/cyber_sneakers"
               className="comunity-link"
+              target="_blank"
+              rel="noreferrer"
             >
               <img src={twitterIco} alt="" />
             </a>
-            <a href="https://linktr.ee/cybersneakers" className="comunity-link">
+            <a
+              href="https://linktr.ee/cybersneakers"
+              target="_blank"
+              rel="noreferrer"
+              className="comunity-link"
+            >
               <img src={linktreeIco} alt="" />
             </a>
             <a
               href="https://discord.com/invite/CyberSneakers"
+              target="_blank"
+              rel="noreferrer"
               className="comunity-link"
             >
               <img src={discordIco} alt="" />

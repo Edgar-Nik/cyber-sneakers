@@ -277,6 +277,109 @@ h3 {
   margin-top: 100px;
 }
 
+.features {
+  margin: 0 auto;
+  width: 100%;
+  display: flex;
+  max-width: 1690px;
+  padding: 100px 20px 20px 20px;
+}
+.features .left {
+  flex: 1;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  box-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+  padding: 70px 0;
+}
+.features .left > img {
+  width: 100%;
+}
+.features .right {
+  flex: 3;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.features .featues-row {
+  display: flex;
+  position: relative;
+}
+.features .featues-row::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  box-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+  left: 0;
+  bottom: 35px;
+}
+.features .featues-row .sneakers-item {
+  flex: 1;
+  padding-left: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.featues-row .sneakers-item .desc {
+  color: #707070;
+  font-size: 16px;
+  position: relative;
+}
+
+.featues-row .sneakers-item .desc::after {
+  position: absolute;
+  content: "";
+  width: 25px;
+  height: 25px;
+  background: #fff;
+  border-radius: 50%;
+  box-shadow: 0 0 8px rgba(255, 255, 255, 0.5);
+  top: -5px;
+  left: 50%;
+  transform: translate(-50%, -100%);
+}
+
+.featues-row .sneakers-item > img {
+  width: 80%;
+  margin-bottom: 40px;
+}
+
+@media screen and (max-width: 900px) {
+  .features {
+    flex-direction: column;
+  }
+  .features .left,
+  .features .right {
+    flex: unset;
+  }
+  .features .right {
+    flex-direction: row;
+    justify-content: space-around;
+    padding-top: 20px;
+  }
+  .features .featues-row {
+    flex-direction: column;
+  }
+  .features .featues-row::after {
+    display: none;
+  }
+  .features .featues-row .sneakers-item {
+    margin-bottom: 30px;
+    padding-left: 0;
+    max-width: 200px;
+  }
+  .featues-row .sneakers-item > img {
+    margin-bottom: 50px;
+    width: 95%;
+  }
+  .featues-row .sneakers-item .desc::after {
+    height: 0;
+    width: 100%;
+    border-bottom: 1px solid #fff;
+  }
+}
+
 .slick-initialized .slick-slide > div {
   width: 100%;
   display: flex;
@@ -720,7 +823,7 @@ h3 {
   border-radius: 10px 100px 10px 100px;
   flex: 1;
   margin-right: 22px;
-  min-height: 500px;
+  min-height: 300px;
   overflow: hidden;
   display: flex;
   flex-direction: column;
@@ -773,7 +876,7 @@ h3 {
   }
   .team-card {
     width: 320px;
-    min-height: 360px;
+    min-height: 320px;
     flex: unset;
     margin-bottom: 22px;
   }
@@ -879,13 +982,13 @@ h3 {
   padding: 0 22px 100px 22px;
 }
 .comunity-link-wrapper .comunity-link {
-  width: 94px;
-  height: 94px;
+  width: 48px;
+  height: 48px;
   border-radius: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-right: 100px;
+  margin-right: 70px;
   filter: grayscale(1);
 }
 .comunity-link-wrapper .comunity-link:hover {
@@ -902,8 +1005,8 @@ h3 {
 
 @media screen and (max-width: 600px) {
   .comunity-link-wrapper .comunity-link {
-    width: 50px;
-    height: 50px;
+    width: 35px;
+    height: 35px;
     margin-right: 50px;
   }
 }
@@ -912,8 +1015,8 @@ h3 {
     font-size: 32px;
   }
   .comunity-link-wrapper .comunity-link {
-    width: 40px;
-    height: 40px;
+    width: 35px;
+    height: 35px;
     margin-right: 30px;
   }
 }
