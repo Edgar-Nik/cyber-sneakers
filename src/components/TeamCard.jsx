@@ -3,7 +3,9 @@ import React from "react";
 export default function TeamCard({ image, fullName, links }) {
   return (
     <div className="team-card">
-      <img src={image} alt={fullName} />
+      <div className="top">
+        <img src={image} alt={fullName} />
+      </div>
       <div className="name-wrapper">{fullName}</div>
       <div className="social-links">
         {links.twitter && (
