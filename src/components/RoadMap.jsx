@@ -81,11 +81,13 @@ export default function RoadMap() {
             sneaker profit.
           </p>
           <h5>Finally Summer</h5>
-          LA - NY - Tokyo - London - Paris
-          <br />
-          Some holders will be sent with the person of their choice to discover
-          the best sneakers store of the world. Shopping budget to find some
-          crazy sneakers will be provided, Hotel + flight also.
+          <p>
+            LA - NY - Tokyo - London - Paris
+            <br />
+            Some holders will be sent with the person of their choice to
+            discover the best sneakers store of the world. Shopping budget to
+            find some crazy sneakers will be provided, Hotel + flight also.
+          </p>
         </div>
       </div>
       <div className="month-card q-4">
@@ -102,12 +104,12 @@ export default function RoadMap() {
             That the way to wish you a Merry Christmas & a Happy New Year.
           </p>
           <h5>BONUS </h5>
-          <h5>
+          <p>
             Much more announcements will be made throughout the year. Like
             capsule collection with brands and famous artists. Some
             collaborations with famous sneakers stores are expected
             (HighSnobiety, Flight Club, KKKicks, etc.)
-          </h5>
+          </p>
         </div>
       </div>
 

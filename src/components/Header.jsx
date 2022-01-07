@@ -1,6 +1,8 @@
 import React, { useState } from "react";
-import logo from "../assets/imgs/logo.svg";
-import logoText from "../assets/imgs/logo-text.svg";
+// import logo from "../assets/imgs/logo.svg";
+// import logoText from "../assets/imgs/logo-text.svg";
+import logo from "../assets/imgs/logo/LOGO_Transparent_Background.png";
+import logoText from "../assets/imgs/logo/cyber_snakers_only-01.png";
 
 export default function Header() {
   const [menuActive, setMenuActive] = useState(false);

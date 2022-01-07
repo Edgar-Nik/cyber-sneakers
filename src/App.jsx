@@ -25,19 +25,16 @@ import blankImage from "./assets/imgs/blank-image.png";
 
 import "./assets/css/header.css";
 import "./assets/css/index.css";
+import DiscordBtn from "./components/JoinDiscordBtn";
 
 const App = () => {
-  const joinNow = () => {
-    window.open("https://discord.com/invite/CyberSneakers", "_blank");
-  };
-
   return (
     <div className="App">
       <Header />
       <div className="main">
         <section className="hero">
           <h1 className="hero-title">JOIN THE CYBER SNEAKERS</h1>
-          <PrimaryButton handleClick={joinNow}>JOIN NOW</PrimaryButton>
+          <DiscordBtn>JOIN DISCORD</DiscordBtn>
         </section>
         <section id="about" className="story">
           <div className="content">
@@ -73,7 +70,8 @@ const App = () => {
                   only able to make 10,000, which he decided to put on sale on
                   OpenSea…
                 </p>
-                <PrimaryButton handleClick={joinNow}>JOIN NOW</PrimaryButton>
+                {/* <PrimaryButton handleClick={joinNow}>JOIN NOW</PrimaryButton> */}
+                <DiscordBtn>JOIN DISCORD</DiscordBtn>
               </div>
               <div className="right">
                 <img src={blankImage} alt="dummy_image" />
@@ -141,7 +139,7 @@ const App = () => {
           <h1 className="title">TEAM PRESENTATION</h1>
           <div className="team">
             <TeamCard
-              fullName="pierre"
+              fullName="Pierre"
               image={team1}
               links={{
                 twitter: "https://twitter.com/PBarrafranca",
@@ -149,7 +147,7 @@ const App = () => {
               }}
             />
             <TeamCard
-              fullName="idriss"
+              fullName="Idriss"
               image={team2}
               links={{
                 twitter: "https://twitter.com/idrissbcom",
@@ -158,7 +156,7 @@ const App = () => {
               }}
             />
             <TeamCard
-              fullName="yannick"
+              fullName="Yannick"
               image={team3}
               links={{
                 twitter: "https://twitter.com/kamga_y",
@@ -166,7 +164,7 @@ const App = () => {
               }}
             />
             <TeamCard
-              fullName="sapir"
+              fullName="Sapir"
               image={team4}
               links={{ twitter: "http://www.twitter.com/CryptoQueenIL" }}
             />

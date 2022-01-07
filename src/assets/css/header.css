@@ -20,6 +20,12 @@ header .menu-btn {
   display: none;
   cursor: pointer;
 }
+.logo-container {
+  width: 400px;
+}
+.logo-container > img {
+  width: 100%;
+}
 .menu-btn .bar1,
 .menu-btn .bar2,
 .menu-btn .bar3 {
@@ -38,7 +44,7 @@ header .logo-wrapper .logo {
 }
 header .logo-wrapper .logo-text {
   width: 391px;
-  margin-left: 22px;
+  margin-left: 10px;
 }
 
 .header-nav {
